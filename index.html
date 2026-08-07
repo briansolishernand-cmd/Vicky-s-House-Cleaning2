@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hernandez Cleaning Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f7f9fc;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#0b4f6c;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+header h2{
+font-size:28px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:35px;
+}
+
+.button{
+background:#19b6ff;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.button:hover{
+background:#118fd0;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+color:#0b4f6c;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0b4f6c;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+background:#0b4f6c;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.stats h2{
+font-size:42px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+input,textarea{
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+padding:15px;
+background:#19b6ff;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+footer{
+background:#0b4f6c;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+@media(max-width:800px){
+
+.about,.contact{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>✨ Hernandez Cleaning</h2>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Your Home Deserves To Shine</h1>
+
+<p>Professional Residential & Commercial Cleaning Services</p>
+
+<a class="button" href="#contact">Get a Free Quote</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<div>
+
+<h2>Family Owned. Trusted. Reliable.</h2>
+
+<br>
+
+<p>
+
+We provide high-quality cleaning services with attention to every detail.
+Whether you need weekly cleaning, deep cleaning, move-in/move-out services,
+or office cleaning, we're committed to leaving every space spotless.
+
+</p>
+
+<br>
+
+<p>
+
+Our mission is simple:
+Deliver dependable service, honest pricing, and exceptional results.
+
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🏡 House Cleaning</h3>
+
+<p>
+
+Routine cleaning including kitchens,
+bathrooms, bedrooms,
+living rooms,
+vacuuming,
+dusting,
+and mopping.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>✨ Deep Cleaning</h3>
+
+<p>
+
+Detailed cleaning including baseboards,
+inside appliances,
+cabinets,
+and hard-to-reach areas.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚚 Move In / Move Out</h3>
+
+<p>
+
+Complete cleaning before moving
+or preparing your property for new occupants.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏢 Office Cleaning</h3>
+
+<p>
+
+Professional cleaning services
+for offices and commercial buildings.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="stats">
+
+<div>
+
+<h2>300+</h2>
+
+<p>Homes Cleaned</p>
+
+</div>
+
+<div>
+
+<h2>100%</h2>
+
+<p>Satisfaction</p>
+
+</div>
+
+<div>
+
+<h2>5★</h2>
+
+<p>Customer Service</p>
+
+</div>
+
+</div>
+
+<section id="contact">
+
+<h2 class="title">Request Your Free Quote</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Call Today</h3>
+
+<br>
+
+<p><strong>Phone:</strong> (555) 555-5555</p>
+
+<p><strong>Email:</strong> hello@hernandezcleaning.com</p>
+
+<p><strong>Hours:</strong> Monday–Saturday 8AM–6PM</p>
+
+<p><strong>Serving:</strong> Richmond, Pinole, El Sobrante, Hercules, San Pablo, Berkeley, Oakland, Concord, and surrounding communities.</p>
+
+</div>
+
+<form>
+
+<input placeholder="Your Name">
+
+<input placeholder="Phone Number">
+
+<input placeholder="Email">
+
+<textarea rows="6" placeholder="Tell us about your cleaning needs..."></textarea>
+
+<button>Request Free Quote</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Hernandez Cleaning Services
+
+</footer>
+
+</body>
+</html>
